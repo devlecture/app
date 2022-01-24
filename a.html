@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>수연 팬닉 만들기</title>
+<meta charset="UTF-8">
+<meta name="robots" content="ALL">
+<meta name="description" content="수연 팬닉 만들기">
+<meta name="keyword" content="수연팬닉, 팬닉만들기, 수연, 팬닉, 1040, 1040sy, 1004sy, 40, 수팬">
+<link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/bootstrap/js/bootstrap.js"></script>
+
+
+<style>
+	body {
+		font-size: 35px;
+		padding: 0px;
+	}
+	
+	#id {
+		font-size: 35px;
+	}
+
+
+	#btnCopy {
+		padding: 10px;
+	}
+	</style>
+
+
+</head>
+<body>
+
+	<div id="os">
+	
+	</div>
+
+	<div class="depth">
+		<button class="btn btn-primary" id="btnCopy" type="button">클립보드 테스트</button>
+		<input id="txtNick" type="text" value="클립보드테스트♥">
+	</div>
+	
+	
+	<div class="depth">
+		<a class="btn btn-primary" href="market://details?id=com.navercorp.android.smartboard" target="_blank">안드로이드앱실행</a>
+	</div>
+	
+	<div class="depth">
+		<a class="btn btn-primary" href=" yourapp://com.navercorp.android.smartboard" target="_blank">딥링크 안드로이드앱실행</a>
+	</div>
+	
+	<div class="depth">
+		<a class="btn btn-primary" href="https://itunes.apple.com/app/id1297816298" target="_blank">아이폰앱실행</a>
+	</div>
+	
+	
+	
+	<div id="display">
+		
+	</div>
+</body>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var os = checkMobile()
+	$("#os").html(checkMobile());
+	
+	
+});
+
+//클립보드 복사
+$("#btnCopy").on("click", function(){
+	$("#txtNick").select();//복사할 텍스트를 선택
+	document.execCommand("copy"); //클립보드 복사 실행
+});
+
+
+
+function checkMobile(){
+ 
+    var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+ 
+    if ( varUA.indexOf('android') > -1) {
+    	
+    	$("#display").append("<p>android</p>");
+    	$("#display").append("<p>앱실행</p>");
+        //안드로이드
+        location.href = "market://details?id=com.navercorp.android.smartboard"
+        return "android";
+    } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+        //IOS
+        return "ios";
+    } else {
+        //아이폰, 안드로이드 외
+        return "other";
+    }
+    
+}
+
+
+
+
+
+</script>
+</html>
