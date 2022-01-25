@@ -85,8 +85,9 @@ body {font-size: 38px;}
 
 
 #android #btnEtcGo {
+	height: 110px;
 	font-size: 40px;
-	padding: 40px 40px 40px 40px;
+	padding: 30px 0px 30px 0px;
 	font-weight: bold;
 	text-align: center;
 	
