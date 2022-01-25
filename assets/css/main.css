@@ -3,20 +3,37 @@
 body {font-size: 38px;}
 
 /*********** 레이아웃 ***********/
-.container-fluid { padding: 0px 0px 0px 0px;}
+.container-fluid {padding: 0px 0px 0px 0px;}
+.content-top {padding: 20px 10px 20px 10px; background-color: #990033;}
+.content-main {padding: 0px 10px 10px 10px;}
 
-.content-top {
-	background-color: #990033;
-}
-
-.content-main {
-	padding: 0px 10px 10px 10px;
-	/* background-color: #ff80c0;	 */
-}
 
 /*********** 공통 ***********/
+.content-top  #profile-img {width: 100%;} 
+.content-top #text-area {margin: 20px 0px 0px 0px;}
+
+
+.content-top #text-area .text-01{
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 60px;
+	letter-spacing: -3px;
+	letter-spacing: -3px;
+}
+
+.content-top #text-area .text-02{
+	font-size: 40px;
+	color: #FFFF99;
+	font-weight: bold;
+}
+
+
+/*********** *************************/
+
+
 .section {
-	padding: 40px 0px 20px 0px;
+	padding: 40px 0px 40px 0px;
 	border-bottom: 1px solid #000000;
 }
 
