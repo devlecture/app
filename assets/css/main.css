@@ -1,6 +1,8 @@
 @charset "UTF-8";
+/*********** 공통 ***********/
 
 /*********** 레이아웃 ***********/
+body { font-size: 16px;}
 .container-fluid { padding: 0px 0px 0px 0px;}
 
 .content-top {
@@ -48,9 +50,9 @@
 }
 
 #android #txtNick {
-	width: 65px;
+	width: 70px;
 	height: 28px;
-	padding: 0px 5px 0px 5px;
+	padding: 0px 0px 0px 0px;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
