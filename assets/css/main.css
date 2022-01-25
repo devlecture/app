@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*********** 레이아웃 ***********/
+.container-fluid { padding: 0px 0px 0px 0px;}
+
+.content-top {
+	background-color: #990033;
+}
+
+.content-main {
+	padding: 0px 10px 10px 10px;
+	/* background-color: #ff80c0;	 */
+}
+
+/*********** 공통 ***********/
+.section {
+	padding: 25px 0px 10px 0px;
+	border-bottom: 1px solid #000000;
+}
+.section .badge {
+	width: 16px;
+	height: 16px;
+	padding: 1px 0px 0px 0px;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: text-bottom;
+	background-color: #777777;
+}
+
+
+.section .step {}
+.section .step-desc {padding: 0px 0px 0px 18px;}
+
+
+
+
+
+
+/* .article {} */
+
+/*********** android ***********/
+#android #btnCopy {
+	margin: 0px 0px 0px 0px;
+	font-size: 14px;
+	padding: 4px 7px 2px 7px;
+	vertical-align: top;
+	
+}
+
+#android #txtNick {
+	width: 65px;
+	height: 28px;
+	padding: 0px 5px 0px 5px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	
+}

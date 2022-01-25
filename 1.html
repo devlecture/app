@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="robots" content="ALL">
+<meta name="description" content="수연팬닉 수연s 만들기 수연 팬닉 10004sy 수팬 ">
+<meta name="keyword" content="수연팬닉, 팬닉만들기, 수연, 팬닉, 1040, 1040sy, 1004sy, 40, 수팬">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수연 팬닉 만들기</title>
+
+<link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./assets/bootstrap/js/bootstrap.js"></script>
+
+
+<style type="text/css">
+</style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="content-top">
+			dafda
+		</div>
+		<!-- box-top -->
+
+		<div id="android" class="content-main">
+		
+			<div class="section">
+				<div class="step">
+					<span class="badge">1</span>아래버튼을 클릭 하면 클립보드에 팬닉을 복사 하세요.
+				</div>
+				<div class="step-desc">
+					<button id="btnCopy"  class="btn btn-primary" type="button">팬닉 클립보드에 복사</button>
+					<input id="txtNick" type="text" value="수연s♥">
+				</div>
+			</div>
+			
+			<div class="section">
+				<div class="step">
+					<span class="badge">2</span>어플의 닉네임 설정으로 이동합니다.
+				</div>
+				<div class="step-desc">
+					<strong>*상단왼쪽 아이콘 > 설정 > 닉네임 설정</strong> 
+					<img src="./assets/img/android_pop_01.png" width="100%">
+				</div>
+			</div>
+			
+			<div class="section">
+				<div class="step">
+					<span class="badge">3</span>클립보드를 이용하여 닉네임을 설정합니다
+				</div>
+				<div class="step-desc">
+					<img src="./assets/img/android_pop_02.png" width="60%">
+				</div>
+			</div>
+
+		</div>
+		<!-- box-main -->
+	</div>
+	<!-- container-fluid -->
+
+</body>
+
+
+
+<script type="text/javascript">
+	//클립보드 복사
+	$("#btnCopy").on("click", function() {
+		$("#txtNick").select();//복사할 텍스트를 선택
+		document.execCommand("copy"); //클립보드 복사 실행
+	});
+</script>
+
+
+
+
+
+</script>
+</html>
