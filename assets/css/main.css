@@ -4,8 +4,11 @@ body {font-size: 38px;}
 
 /*********** 레이아웃 ***********/
 .container-fluid {padding: 0px 0px 0px 0px;}
-.content-top {padding: 20px 10px 20px 10px; background-color: #990033;}
-.content-main {padding: 0px 10px 10px 10px;}
+.content-top {
+	padding: 20px 20px 20px 20px; 
+	background: linear-gradient(170deg, #8A002E, #A10036, #CD0044, #A10036, #8A002E);
+}
+.content-main {padding: 0px 20px 10px 20px;}
 
 
 /*********** 공통 ***********/
